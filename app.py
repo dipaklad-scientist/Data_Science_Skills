@@ -6,19 +6,17 @@ import requests
 import os
 import gdown
 
-file_id = 'https://drive.google.com/file/d/1AxdMNf_CP0j9L3l7tkP4i8a01WlRgczB/view?usp=sharing'
-output_file = 'model.pkl'  # Change based on your model format
+file_id = '1AxdMNf_CP0j9L3l7tkP4i8a01WlRgczB'
+output_file = 'USA_House_Price_Prediction_model.pkl'
 
-# Construct the download URL
 download_url = f'https://drive.google.com/uc?id={file_id}'
 
-# Download the model if not already present
 if not os.path.exists(output_file):
     st.info('Downloading model from Google Drive...')
     gdown.download(download_url, output_file, quiet=False)
 
-# Load the model
 model = joblib.load(output_file)
+
 st.title('USA House Price Prediction Model')
 st.divider()
 st.write('Please enter House details in Numeric Format')
