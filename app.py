@@ -4,24 +4,21 @@ import pandas as pd
 import joblib
 import requests
 import os
-import zipfile
+import gdown
 
-MODEL_URL = 'https://drive.google.com/uc?export=download&id=1ZeXf3SPtqI2PfovhCQfl_8cLjCh4kqyX'
-ZIP_PATH = 'model.zip'
-MODEL_PATH = 'USA_House_Price_Prediction_model.pkl'
+file_id = 'https://drive.google.com/file/d/1AxdMNf_CP0j9L3l7tkP4i8a01WlRgczB/view?usp=sharing'
+output_file = 'model.pkl'  # Change based on your model format
 
-if not os.path.exists(MODEL_PATH):
-    st.info("Downloading model ZIP...")
-    response = requests.get(MODEL_URL)
-    with open(ZIP_PATH, 'wb') as f:
-        f.write(response.content)
-    st.info("Extracting model...")
-    with zipfile.ZipFile(ZIP_PATH, 'r') as zip_ref:
-        zip_ref.extractall(".")
-    st.success("Model extracted successfully!")
+# Construct the download URL
+download_url = f'https://drive.google.com/uc?id={file_id}'
 
-# Load model
-model = joblib.load(MODEL_PATH)
+# Download the model if not already present
+if not os.path.exists(output_file):
+    st.info('Downloading model from Google Drive...')
+    gdown.download(download_url, output_file, quiet=False)
+
+# Load the model
+model = joblib.load(output_file)
 st.title('USA House Price Prediction Model')
 st.divider()
 st.write('Please enter House details in Numeric Format')
