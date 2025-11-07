@@ -35,9 +35,10 @@ sqft_living=st.number_input('Select sqft_living',min_value=0,value=0)
 st.divider()
 x=[bedrooms,bathrooms,sqft_living,sqft_above,sqft_basement,lat,waterfront,view,grade,sqft_living15,floor]
 predictbutton=st.button('Predict')
+
 if predictbutton:
-  x_array=np.array(x)
-  prediction=model.predict(x_array)
-  st.write(f'Predicted House Price: ${prediction[0]:,.2f}')
+    x_array = np.array(x).reshape(1, -1)  # Reshape to 2D array
+    prediction = model.predict(x_array)
+    st.write(f'Predicted House Price: ${prediction[0]:,.2f}')
 else:
     st.write('Please click predict button after entering all values')
