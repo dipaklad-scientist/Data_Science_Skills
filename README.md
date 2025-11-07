@@ -23,4 +23,5 @@ Hi! I'm a student passionate about data science and actively seeking opportuniti
 
 This repository is not just a checklist—it's a showcase of my growth, curiosity, and readiness to contribute as a data scientist. I'm excited to bring these skills into a professional environment and continue learning from experienced teams.
 
+App Link=https://datascienceskills-xnhcrm4lk4kfxctvjnr8mc.streamlit.app/
 
