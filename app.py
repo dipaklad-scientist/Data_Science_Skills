@@ -16,12 +16,19 @@ if not os.path.exists(output_file):
     gdown.download(download_url, output_file, quiet=False)
 
 model = joblib.load(output_file)
-
+url='https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DA0101EN-SkillsNetwork/labs/FinalModule_Coursera/data/kc_house_data_NaN.csv'
+df=pd.read_csv(url)
+floors=df['floors'].unique()
+waterfront=df['waterfront'].unique()
+bedrooms=df['bedrooms'].unique()
+view=df['view'].unique()
+bathrooms=df['bathrooms'].unique()
+grade=df['grade'].unique()
 st.title('USA House Price Prediction Model')
 st.divider()
 st.write('Please enter House details in Numeric Format')
 st.divider()
-floor=st.number_input('Select floors',min_value=0,value=0)
+floor=st.selectbox('Select Number of floors',floors)
 waterfront=st.number_input('Select waterfront',min_value=0,value=0)
 bedrooms=st.number_input('Select Number of bedrooms',min_value=0,value=0)
 sqft_basement=st.number_input('Enter Square footage of the basement',min_value=0,value=0)
