@@ -39,8 +39,10 @@
   - Github repository is used to store app.py file and requiremets.txt
   - Streamlit cloud is used to host app. 
 ## 🛠️Key skills used in this project:
-**Python Libraries:** Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, Plotly Dash,os,gdown.
-**Other Tools:** Github, Streamlit Cloud, Google Colab.
+**Python Libraries:** 
+- Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, Plotly Dash,os,gdown.
+**Other Tools:** 
+- Github, Streamlit Cloud, Google Colab.
 
 **Conslusion -** Deployed regression machine learning model where they just select the and enter the details of the house then then model will predict its price.
                 Provide key finding to help decision making.
