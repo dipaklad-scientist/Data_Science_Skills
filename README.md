@@ -57,17 +57,6 @@ A Real Estate Investment Trust (REIT) wants to start investing in residential pr
 - **Languages & Libraries**: Python, Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, XGBoost, Plotly Dash
 - **Tools**: Google Colab, GitHub, Streamlit Cloud
 
-## 📸 Screenshots
-*(Add screenshots of EDA plots, feature importance, and Streamlit app interface here)*
-
-## 🚀 How to Run
-```bash
-git clone <repo-link>
-cd <repo-folder>
-pip install -r requirements.txt
-streamlit run app.py
-```
-
 ## 📌 Conclusion
 - RandomForestRegressor with tuned parameters achieved **R² = 0.78**.
 - Key drivers of price: Square footage, grade, and waterfront view.
