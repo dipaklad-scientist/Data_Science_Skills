@@ -1,51 +1,74 @@
-# 🏡House Sales Prices Data of USA (May 2014-May 2015)
-**Business Problem -** Real Estate Investment Trust would like to start investing in Residential real estate.
-                       Want to determining the market price of a house by features of house.
-## **Goal -** Determine the sale price of house and Find key insights.
-## **Role -** As data Analyst analyze house sale price data and find insights.
-## 🔍Key findings from this project: 
-- Deployed Machine learning model to help predict house price.
--	Condition of House is not affection price as expected.
--	Square footage of the home and overall grade given to the housing unit, based on USA grading system dominate more to price 
--	Square footage of house apart from basement is also positively impact on price.
--	House which has a view to a waterfront or more expensive than the other.
-## Methodes used
-- **Data Wrangling-**
-  - Droped unusefull columns like['Unnamed: 0','id']
-  - Checked null values replaced them with the mean of column
-  - Check data types and correct them
-- **Exploratory Data Analysis**
-  - Analyzed each column check value counts of each
-  - Checked correlation of each feature with price by using pandas corr() method  
-- **Data visualization**
-  - Used visualizations libraries like matplotlib and seaborn
-  - Used visualizations like barplot,regplot from seaborn library.
-  - Used matplotlib pyplot to add lables and titles to visualizations.  - 
-- **Model Development**
-  - Used scikit learn library to develop model
-  - Used different types regression such as LinearRegression,Ridge,Lasso,RandomForestRegressor,DecisionTreeRegressor,XGBRegressor.
-  - Used Model selection tool like train_test_split with the 80 % data for training and 20 % for testing.
-  - Calculate training and testing score by using .score().
-- **Model Evaluation and Refinement**
-  - From model selection of scikit learn used cross_val_score with cv=5 and scoring ='r2'
-  - From metrics of scikit learn used mean_squared_error,r2_score of models.
-  - From model selection of scikit learn used GridSearchCV to find best Best Parameters for the selected model.
-  - From pipeline and preprocessing of scikit learn used pipeline and StandardScaler to improve model performance.
-- **Model Deployment**
-  - By using joblib create pkl file of the developed model.
-  - Model stored at Google drive so by using requests,os,joblib model download in the app
-  - Used streamlit library do create layout.
-  - Used streamlit functions such as selectbox,number_input,button,write,title,divider.
-  - Github repository is used to store app.py file and requiremets.txt
-  - Streamlit cloud is used to host app. 
-## 🛠️Key skills used in this project:
-**Python Libraries:** 
-- Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, Plotly Dash,os,gdown.
-**Other Tools:** 
-- Github, Streamlit Cloud, Google Colab.
+# 🏡 USA House Sales Price Prediction (May 2014 – May 2015)
 
-**Conslusion -** Deployed regression machine learning model where they just select the and enter the details of the house then then model will predict its price.
-                Provide key finding to help decision making.
+## 📌 Project Overview
+This project predicts house sale prices in the USA using machine learning models. It involves data cleaning, exploratory data analysis (EDA), feature engineering, model development, evaluation, and deployment via Streamlit.
 
-## USA House Price Prediction Model App Link:
-**App Link=**https://datascienceskills-txkesgndkbtq49cq36bk7g.streamlit.app/
+## 💼 Business Problem
+A Real Estate Investment Trust (REIT) wants to start investing in residential properties. The goal is to determine the market price of a house based on its features to make informed investment decisions.
+
+## 🎯 Goal
+- Predict the sale price of a house.
+- Identify key factors influencing house prices.
+
+## 🔍 Key Findings
+- **Condition of the house** does not affect price as much as expected.
+- **Square footage** and **overall grade** dominate price prediction.
+- Houses with **waterfront views** are significantly more expensive.
+- Square footage apart from the basement also positively impacts price.
+
+## 📂 Dataset Information
+- Timeframe: May 2014 – May 2015
+- Columns cleaned: Dropped `['Unnamed: 0', 'id']`
+- Missing values handled by replacing with column mean.
+
+## 🛠️ Methodology
+### 1. Data Wrangling
+- Dropped unnecessary columns.
+- Checked and corrected data types.
+- Handled missing values.
+
+### 2. Exploratory Data Analysis (EDA)
+- Analyzed feature distributions and correlations using `pandas.corr()`.
+- Visualized trends using **Seaborn** and **Matplotlib**.
+
+### 3. Data Visualization
+- Plots used: `barplot`, `regplot` (Seaborn), and custom charts with Matplotlib.
+
+### 4. Model Development
+- Models tested: `LinearRegression`, `Ridge`, `Lasso`, `DecisionTreeRegressor`, `RandomForestRegressor`, `XGBRegressor`.
+- Train-test split: 80% training, 20% testing.
+- Selected Model: **RandomForestRegressor**
+- Best Parameters (via GridSearchCV): `max_depth=30`, `n_estimators=300`
+- Performance: **R² Score = 0.78**
+
+### 5. Model Evaluation
+- Metrics: `mean_squared_error`, `r2_score`
+- Cross-validation: `cross_val_score(cv=5, scoring='r2')`
+
+### 6. Deployment
+- Model saved as `.pkl` using **joblib**.
+- Integrated with **Streamlit** for interactive web app.
+- Hosted on **Streamlit Cloud**.
+
+## 🌐 App Link
+[USA House Price Prediction Model](https://datascienceskills-txkesgndkbtq49cq36bk7g.streamlit.app/)
+
+## 🛠️ Tech Stack
+- **Languages & Libraries**: Python, Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, XGBoost, Plotly Dash
+- **Tools**: Google Colab, GitHub, Streamlit Cloud
+
+## 📸 Screenshots
+*(Add screenshots of EDA plots, feature importance, and Streamlit app interface here)*
+
+## 🚀 How to Run
+```bash
+git clone <repo-link>
+cd <repo-folder>
+pip install -r requirements.txt
+streamlit run app.py
+```
+
+## 📌 Conclusion
+- RandomForestRegressor with tuned parameters achieved **R² = 0.78**.
+- Key drivers of price: Square footage, grade, and waterfront view.
+- Deployed an interactive app for real-time predictions.
