@@ -1,27 +1,63 @@
-# 🧠 Data Scientist Skills — My Learning Journey
+#  SpaceX_Falcon9_first_stage_Landing_Prediction
 
-Hi! I'm a student passionate about data science and actively seeking opportunities to apply my skills in real-world settings. This repository is a reflection of my learning journey, showcasing the core competencies I've developed through coursework, personal projects, and self-study.
+## 📌 Project Overview
+This project predicts house sale prices in the USA using machine learning models. It involves data cleaning, exploratory data analysis (EDA), feature engineering, model development, evaluation, and deployment via Streamlit.
 
-## 🎯 What This Repo Covers
+## 💼 Business Problem
+SpaceY company want to A Real Estate Investment Trust (REIT) wants to start investing in residential properties. The goal is to determine the market price of a house based on its features to make informed investment decisions.
 
-- **Programming:** Python (NumPy, Pandas, Scikit-learn, Matplotlib), SQL
-- **Statistics & Probability:** Regression, hypothesis testing, distributions
-- **Machine Learning:** Supervised and unsupervised learning, model evaluation
-- **Deep Learning:** Neural networks, CNNs, RNNs (introductory level)
-- **Data Visualization:** Seaborn, Tableau, Power BI
-- **Big Data & Cloud:** Basics of Spark, Hadoop, AWS
-- **Soft Skills:** Communication, collaboration, problem-solving
+## 🎯 Goal
+- Predict the sale price of a house.
+- Identify key factors influencing house prices.
 
-## 📚 How I Learned
+## 🔍 Key Findings
+- **Condition of the house** does not affect price as much as expected.
+- **Square footage** and **overall grade** dominate price prediction.
+- Houses with **waterfront views** are significantly more expensive.
+- Square footage apart from the basement also positively impacts price.
 
-- Completed academic coursework in data structures, algorithms, and statistics
-- Built hands-on projects like predictive models, dashboards, and data pipelines
-- Participated in Kaggle competitions and online bootcamps
-- Explored real-world datasets to practice EDA, modeling, and storytelling
+## 📂 Dataset Information
+- Timeframe: May 2014 – May 2015
+- Columns cleaned: Dropped `['Unnamed: 0', 'id']`
+- Missing values handled by replacing with column mean.
 
-## 🚀 Why This Matters
+## 🛠️ Methodology
+### 1. Data Wrangling
+- Dropped unnecessary columns.
+- Checked and corrected data types.
+- Handled missing values.
 
-This repository is not just a checklist—it's a showcase of my growth, curiosity, and readiness to contribute as a data scientist. I'm excited to bring these skills into a professional environment and continue learning from experienced teams.
+### 2. Exploratory Data Analysis (EDA)
+- Analyzed feature distributions and correlations using `pandas.corr()`.
+- Visualized trends using **Seaborn** and **Matplotlib**.
 
-## Deployed App Links
-**SpaceX_Falcon9_First_Stage_Landing_Prediction =** https://datascienceskills-q36rxhcunb7g9aj57krg9j.streamlit.app/
+### 3. Data Visualization
+- Plots used: `barplot`, `regplot` (Seaborn), and custom charts with Matplotlib.
+
+### 4. Model Development
+- Models tested: `LinearRegression`, `Ridge`, `Lasso`, `DecisionTreeRegressor`, `RandomForestRegressor`, `XGBRegressor`.
+- Train-test split: 80% training, 20% testing.
+- Selected Model: **RandomForestRegressor**
+- Best Parameters (via GridSearchCV): `max_depth=30`, `n_estimators=300`
+- Performance: **R² Score = 0.78**
+
+### 5. Model Evaluation
+- Metrics: `mean_squared_error`, `r2_score`
+- Cross-validation: `cross_val_score(cv=5, scoring='r2')`
+
+### 6. Deployment
+- Model saved as `.pkl` using **joblib**.
+- Integrated with **Streamlit** for interactive web app.
+- Hosted on **Streamlit Cloud**.
+
+## 🌐 App Link
+[SpaceX_Falcon9_First_Stage_Landing_Prediction_model](https://datascienceskills-q36rxhcunb7g9aj57krg9j.streamlit.app/)
+
+## 🛠️ Tech Stack
+- **Languages & Libraries**: Python, Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, XGBoost, Plotly Dash
+- **Tools**: Google Colab, GitHub, Streamlit Cloud
+
+## 📌 Conclusion
+- RandomForestRegressor with tuned parameters achieved **R² = 0.78**.
+- Key drivers of price: Square footage, grade, and waterfront view.
+- Deployed an interactive app for real-time predictions.
