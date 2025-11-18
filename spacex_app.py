@@ -76,6 +76,9 @@ if predictbutton:
 
     # Predict
     prediction = model.predict(input_scaled)
-    st.success(f'Predicted Landing Outcome: {prediction[0]}')
+    if prediction==1:
+        st.success(f"Landing Outcome {prediction[0]}: ✅ Successful Landing")
+    else:
+        st.error(f"Landing Outcome {prediction[0]}: ❌ Landing Failure")
 else:
     st.info('Please click predict button after entering all values')
