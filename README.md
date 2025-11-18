@@ -24,4 +24,4 @@ Hi! I'm a student passionate about data science and actively seeking opportuniti
 This repository is not just a checklist—it's a showcase of my growth, curiosity, and readiness to contribute as a data scientist. I'm excited to bring these skills into a professional environment and continue learning from experienced teams.
 
 ## Deployed App Links
-**USA_House_Price_Prediction_model_app =** https://datascienceskills-txkesgndkbtq49cq36bk7g.streamlit.app/
+**SpaceX_Falcon9_First_Stage_Landing_Prediction =** https://datascienceskills-q36rxhcunb7g9aj57krg9j.streamlit.app/
