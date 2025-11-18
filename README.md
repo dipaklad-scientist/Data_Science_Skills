@@ -1,10 +1,10 @@
 #  SpaceX_Falcon9_first_stage_Landing_Prediction
 
 ## 📌 Project Overview
-This project predicts house sale prices in the USA using machine learning models. It involves data cleaning, exploratory data analysis (EDA), feature engineering, model development, evaluation, and deployment via Streamlit.
+To determmine the price of each lounch by gathering information about spaceX.To determine this have to determine wether the spaceX will Reuse the first stage of falcon 9 rocket beacuse first stage holds 50-60 percent value of overall rocket.
 
 ## 💼 Business Problem
-SpaceY company want to A Real Estate Investment Trust (REIT) wants to start investing in residential properties. The goal is to determine the market price of a house based on its features to make informed investment decisions.
+SpaceY company to A Real Estate Investment Trust (REIT) wants to start investing in residential properties. The goal is to determine the market price of a house based on its features to make informed investment decisions.
 
 ## 🎯 Goal
 - Predict the sale price of a house.
