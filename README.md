@@ -1,14 +1,20 @@
 #  SpaceX_Falcon9_first_stage_Landing_Prediction
 
 ## 📌 Project Overview
-To determmine the price of each lounch by gathering information about spaceX.To determine this have to determine wether the spaceX will Reuse the first stage of falcon 9 rocket beacuse first stage holds 50-60 percent value of overall rocket.
+To determmine the price of each lounch by gathering information about spaceX.To determine this, have to determine wether the spaceX will Reuse the first stage of falcon 9 rocket beacuse first stage holds 50-60 percent cost of overall rocket.
 
 ## 💼 Business Problem
-SpaceY company to A Real Estate Investment Trust (REIT) wants to start investing in residential properties. The goal is to determine the market price of a house based on its features to make informed investment decisions.
+SpaceX adverties falcon9 rocket lounch with $62 million cost.While other providers cost $165 million.
+Stages:-
+Fairings  - Carries Payloads
+Stage Two - Help Payload the Fairings to bring the Payload to Orbit.
+Stage One - Most of the work done by first stage.
+Unlike other providers spaceX falcon9 can recover the first stage.Sometimes the first stage does not land,it will crash other times spaceX will sacrifies first stage due to mission parameters like Payload,Orbit and Customer.
+SpaceY company want to compite spaceX in the race of space.
 
 ## 🎯 Goal
-- Predict the sale price of a house.
-- Identify key factors influencing house prices.
+- Predict the first stage of falcon9 Rocket will land sucessfully or Not land.
+- Identify key factors influencing landing outcome.
 
 ## 🔍 Key Findings
 - **Condition of the house** does not affect price as much as expected.
@@ -54,7 +60,7 @@ SpaceY company to A Real Estate Investment Trust (REIT) wants to start investing
 [SpaceX_Falcon9_First_Stage_Landing_Prediction_model](https://datascienceskills-q36rxhcunb7g9aj57krg9j.streamlit.app/)
 
 ## 🛠️ Tech Stack
-- **Languages & Libraries**: Python, Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, XGBoost, Plotly Dash
+- **Languages & Libraries**: Python, BeautifulSoup, Pandas, NumPy, Matplotlib, Seaborn, folium, Scikit-learn, Plotly Dash
 - **Tools**: Google Colab, GitHub, Streamlit Cloud
 
 ## 📌 Conclusion
