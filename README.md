@@ -19,9 +19,9 @@ Hi! I'm a student passionate about data science and actively seeking opportuniti
         - **Contents:**
             -  `README.md`
             -  `USA_House_Sales_Data_Analysis.ipynb`
-            -  'USA_House_Price_Prediction_Project_Report.pdf'
-            -  [`USA_House_Price_Prediction_Model.pkl'](https://drive.google.com/file/d/1AxdMNf_CP0j9L3l7tkP4i8a01WlRgczB/view?usp=sharing) is stored at google drive due to storage limit on github.
-            -  'app.py'
+            -  `USA_House_Price_Prediction_Project_Report.pdf`
+            -  [USA_House_Price_Prediction_Model.pkl](https://drive.google.com/file/d/1AxdMNf_CP0j9L3l7tkP4i8a01WlRgczB/view?usp=sharing) is stored at google drive due to storage limit on github.
+            -  `app.py`
             -  `requirements.txt`      
     - [SpaceX_Falcon9_first_stage_Landing_Prediction](https://github.com/dipaklad-scientist/Data_Science_Skills/tree/SpaceX_Falcon9_first_stage_Landing_Prediction)
         - **Contents:**
@@ -30,7 +30,7 @@ Hi! I'm a student passionate about data science and actively seeking opportuniti
           -  `SpaceX_Falcon9_first_stage_Landing_Prediction.pkl`
           -  `spacex_app.py`
           -  `requirements.txt`
-          -  'scaler.pkl'
+          -  `scaler.pkl`
           -  `training_columns.pkl`
           -  `spacex_launch_data.csv`
 
