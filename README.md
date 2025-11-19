@@ -4,14 +4,11 @@
 To determmine the price of each lounch by gathering information about spaceX.To determine this, have to determine wether the spaceX will Reuse the first stage of falcon 9 rocket beacuse first stage holds 50-60 percent cost of overall rocket.
 
 ## 💼 Business Problem
-SpaceX adverties falcon9 rocket lounch with $62 million cost.While other providers cost $165 million.
+In this capstone, we will predict if the Falcon 9 first stage will land successfully. SpaceX advertises Falcon 9 rocket launches on its website with a cost of 62 million dollars; other providers cost upward of 165 million dollars each, much of the savings is because SpaceX can reuse the first stage.SpaceY company want to compite spaceX in the race of space.
 Stages:-
 Fairings  - Carries Payloads
 Stage Two - Help Payload the Fairings to bring the Payload to Orbit.
 Stage One - Most of the work done by first stage.
-Unlike other providers spaceX falcon9 can recover the first stage.Sometimes the first stage does not land,it will crash other times spaceX will sacrifies first stage due to mission parameters like Payload,Orbit and Customer.
-SpaceY company want to compite spaceX in the race of space.
-
 ## 🎯 Goal
 - Predict the first stage of falcon9 Rocket will land sucessfully or Not land.
 - Identify key factors influencing landing outcome.
@@ -20,37 +17,36 @@ SpaceY company want to compite spaceX in the race of space.
 - ES-L1, GEO, HEO, SSO, Orbits has most success rate.
 - Max Load carried out by Falcon9 rocket is 3726 kg.
 - NASA is also client of spaceX with 32 lounches.
-- **Square footage** and **overall grade** dominate price prediction.
-- Houses with **waterfront views** are significantly more expensive.
-- Square footage apart from the basement also positively impacts price.
 
 ## 📂 Dataset Information
-- Timeframe: May 2014 – May 2015
-- Columns cleaned: Dropped `['Unnamed: 0', 'id']`
-- Missing values handled by replacing with column mean.
-
+- Data Collected using spaceX api with the help of requests.
+- Web scraping using BeautifulSoup to get Falcon 9 and Falcon Heavy Launches Records from Wikipedia
 ## 🛠️ Methodology
 ### 1. Data Wrangling
 - Dropped unnecessary columns.
 - Checked and corrected data types.
 - Handled missing values.
 
+### 2.Feature Engeneering
+- Created Class column using outcome to determing success or failure.
+
 ### 2. Exploratory Data Analysis (EDA)
-- Analyzed feature distributions and correlations using `pandas.corr()`.
-- Visualized trends using **Seaborn** and **Matplotlib**.
+- Load data in sqlite3 to query data for key findings.
+- Visualized trends using **Seaborn**,**Folium**and **Matplotlib**.
 
 ### 3. Data Visualization
-- Plots used: `barplot`, `regplot` (Seaborn), and custom charts with Matplotlib.
+- Plots used: `barplot`, `catplot` (Seaborn), `lineplot` and custom charts with Matplotlib.
+- Folium World map,Folium marker cluster to visualize location with the outcome sign red or green
 
 ### 4. Model Development
-- Models tested: `LinearRegression`, `Ridge`, `Lasso`, `DecisionTreeRegressor`, `RandomForestRegressor`, `XGBRegressor`.
+- Models tested: `LogisticRegression`, `SVC`, `DecisionTreeClassifier`, `KNeighborsClassifier`.
 - Train-test split: 80% training, 20% testing.
-- Selected Model: **RandomForestRegressor**
-- Best Parameters (via GridSearchCV): `max_depth=30`, `n_estimators=300`
-- Performance: **R² Score = 0.78**
+- Selected Model: **LogisticRegression**
+- Best Parameters (via GridSearchCV): {'C': 0.01, 'penalty': 'l2', 'solver': 'lbfgs'}
+- Performance: **R² Score = 0.94**
 
 ### 5. Model Evaluation
-- Metrics: `mean_squared_error`, `r2_score`
+- Metrics: `r2_score`
 - Cross-validation: `cross_val_score(cv=5, scoring='r2')`
 
 ### 6. Deployment
@@ -62,10 +58,10 @@ SpaceY company want to compite spaceX in the race of space.
 [SpaceX_Falcon9_First_Stage_Landing_Prediction_model](https://datascienceskills-q36rxhcunb7g9aj57krg9j.streamlit.app/)
 
 ## 🛠️ Tech Stack
-- **Languages & Libraries**: Python, BeautifulSoup, Pandas, NumPy, Matplotlib, Seaborn, folium, Scikit-learn, Plotly Dash
+- **Languages & Libraries**: Python, BeautifulSoup, Pandas, NumPy, Matplotlib, Seaborn, folium, Scikit-learn, Streamlit.
 - **Tools**: Google Colab, GitHub, Streamlit Cloud
 
 ## 📌 Conclusion
-- RandomForestRegressor with tuned parameters achieved **R² = 0.78**.
-- Key drivers of price: Square footage, grade, and waterfront view.
+- LogisticRegression with tuned parameters achieved **R² = 0.94**.
+- Key drivers of price: Orbit and PayloadMass.
 - Deployed an interactive app for real-time predictions.
