@@ -1,6 +1,6 @@
-# 🧠 **Data Scientist Skills Repository**
+# 🧠 **Data Science Skills Repository**
 
-> *A curated collection of projects and skills demonstrating my journey toward becoming a data scientist.*
+> *A curated collection of projects and skills demonstrating my data skills.*
 
 ---
 
