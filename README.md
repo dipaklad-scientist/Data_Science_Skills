@@ -80,7 +80,7 @@
 
 
 ### 🌐 Live App
-- SpaceX Falcon 9 Landing Prediction (Insert your Streamlit app link here)
+- SpaceX Falcon 9 Landing Prediction (https://datascienceskills-q36rxhcunb7g9aj57krg9j.streamlit.app/)
 
 ### 🛠️ Tech Stack
 
