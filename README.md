@@ -1,67 +1,95 @@
-#  SpaceX_Falcon9_first_stage_Landing_Prediction
+# 🚀 SpaceX Falcon 9 First Stage Landing Prediction
+### 📌 Project Overview
+- The cost of a SpaceX Falcon 9 launch is approximately $62 million, significantly lower than competitors charging upwards of $165 million. This cost advantage comes primarily from reusing the first stage, which accounts   for 50–60% of the total rocket cost.
+- This project predicts whether the Falcon 9 first stage will successfully land, enabling cost estimation and strategic insights for companies like SpaceY, aiming to compete with SpaceX.
 
-## 📌 Project Overview
-To determmine the price of each lounch by gathering information about spaceX.To determine this, have to determine wether the spaceX will Reuse the first stage of falcon 9 rocket beacuse first stage holds 50-60 percent cost of overall rocket.
+### 💼 Business Problem
+- SpaceX’s ability to reuse the first stage is a game-changer in the space industry. Predicting landing success helps estimate launch costs and optimize mission planning.
+- **Objective:**  Build a predictive model to determine if the Falcon 9 first stage will land successfully based on mission parameters.
 
-## 💼 Business Problem
-In this capstone, we will predict if the Falcon 9 first stage will land successfully. SpaceX advertises Falcon 9 rocket launches on its website with a cost of 62 million dollars; other providers cost upward of 165 million dollars each, much of the savings is because SpaceX can reuse the first stage.SpaceY company want to compite spaceX in the race of space.
-Stages:-
-Fairings  - Carries Payloads
-Stage Two - Help Payload the Fairings to bring the Payload to Orbit.
-Stage One - Most of the work done by first stage.
-## 🎯 Goal
-- Predict the first stage of falcon9 Rocket will land sucessfully or Not land.
-- Identify key factors influencing landing outcome.
+### 🎯 Goals
 
-## 🔍 Key Findings
-- ES-L1, GEO, HEO, SSO, Orbits has most success rate.
-- Max Load carried out by Falcon9 rocket is 3726 kg.
-- NASA is also client of spaceX with 32 lounches.
+- Predict landing success of Falcon 9 first stage.
+- Identify key factors influencing landing outcomes.
+- Provide actionable insights for cost estimation and competitive strategy.
 
-## 📂 Dataset Information
-- Data Collected using spaceX api with the help of requests.
-- Web scraping using BeautifulSoup to get Falcon 9 and Falcon Heavy Launches Records from Wikipedia
-## 🛠️ Methodology
-### 1. Data Wrangling
-- Dropped unnecessary columns.
-- Checked and corrected data types.
+
+### 🔍 Key Insights
+
+- Orbits like ES-L1, GEO, HEO, SSO have the highest success rates.
+- Maximum payload carried by Falcon 9: 3726 kg.
+- NASA is a major client with 32 launches.
+
+
+### 📂 Dataset
+
+**Source:**
+
+- SpaceX API (via requests)
+- Wikipedia Falcon 9 & Falcon Heavy launch records (via BeautifulSoup)
+
+
+- Storage: SQLite database for efficient querying.
+
+
+### 🛠️ Methodology
+**1. Data Wrangling**
+
+- Removed irrelevant columns.
+- Corrected data types.
 - Handled missing values.
 
-### 2.Feature Engeneering
-- Created Class column using outcome to determing success or failure.
+**2. Feature Engineering**
 
-### 2. Exploratory Data Analysis (EDA)
-- Load data in sqlite3 to query data for key findings.
-- Visualized trends using **Seaborn**,**Folium**and **Matplotlib**.
+- Created Class column (Success = 1, Failure = 0).
 
-### 3. Data Visualization
-- Plots used: `barplot`, `catplot` (Seaborn), `lineplot` and custom charts with Matplotlib.
-- Folium World map,Folium marker cluster to visualize location with the outcome sign red or green
+**3. Exploratory Data Analysis**
 
-### 4. Model Development
-- Models tested: `LogisticRegression`, `SVC`, `DecisionTreeClassifier`, `KNeighborsClassifier`.
-- Train-test split: 80% training, 20% testing.
-- Selected Model: **LogisticRegression**
-- Best Parameters (via GridSearchCV): {'C': 0.01, 'penalty': 'l2', 'solver': 'lbfgs'}
-- Performance: **R² Score = 0.94**
+- Queried data using SQLite.
+- Visualized trends with Seaborn, Matplotlib, and Folium.
 
-### 5. Model Evaluation
-- Metrics: `r2_score`
-- Cross-validation: `cross_val_score(cv=5, scoring='r2')`
+**4. Data Visualization**
 
-### 6. Deployment
-- Model saved as `.pkl` using **joblib**.
-- Integrated with **Streamlit** for interactive web app.
-- Hosted on **Streamlit Cloud**.
+- Seaborn: barplot, catplot, lineplot
+- Matplotlib: Custom charts
+- Folium: World map with marker clusters (green = success, red = failure)
 
-## 🌐 App Link
-[SpaceX_Falcon9_First_Stage_Landing_Prediction_model](https://datascienceskills-q36rxhcunb7g9aj57krg9j.streamlit.app/)
+**5. Model Development**
 
-## 🛠️ Tech Stack
-- **Languages & Libraries**: Python, BeautifulSoup, Pandas, NumPy, Matplotlib, Seaborn, folium, Scikit-learn, Streamlit.
-- **Tools**: Google Colab, GitHub, Streamlit Cloud
+**Models tested:**
+- `LogisticRegression`, `SVC`, `DecisionTreeClassifier`, `KNeighborsClassifier`.
+- Train-test split: 80/20
+- Best Model: Logistic Regression
 
-## 📌 Conclusion
-- LogisticRegression with tuned parameters achieved **R² = 0.94**.
-- Key drivers of price: Orbit and PayloadMass.
+**Tuned via GridSearchCV**
+- Best Params: {'C': 0.01, 'penalty': 'l2', 'solver': 'lbfgs'}
+
+
+**Performance:**
+
+- R² Score = 0.94
+- Cross-validation: cv=5
+
+
+
+**6. Deployment**
+
+- Model saved as .pkl using joblib.
+- Integrated with Streamlit for interactive web app.
+- Hosted on Streamlit Cloud.
+
+
+### 🌐 Live App
+- SpaceX Falcon 9 Landing Prediction (Insert your Streamlit app link here)
+
+### 🛠️ Tech Stack
+
+- Languages & Libraries: Python, Pandas, NumPy, BeautifulSoup, Matplotlib, Seaborn, Folium, Scikit-learn, Streamlit
+- Tools: Google Colab, GitHub, Streamlit Cloud
+
+
+### ✅ Conclusion
+
+- Logistic Regression achieved R² = 0.94 after hyperparameter tuning.
+- Orbit type and Payload mass are key drivers of landing success.
 - Deployed an interactive app for real-time predictions.
