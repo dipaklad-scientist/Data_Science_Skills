@@ -1,4 +1,4 @@
-# 🧠 Data Scientist Skills — My Learning Journey
+# 🧠 Data Scientist Skills
 
 Hi! I'm a student passionate about data science and actively seeking opportunities to apply my skills in real-world settings. This repository is a reflection of my learning journey, showcasing the core competencies I've developed through coursework, personal projects, and self-study.
 
@@ -12,12 +12,13 @@ Hi! I'm a student passionate about data science and actively seeking opportuniti
 - **Big Data & Cloud:** Basics of Spark, Hadoop, AWS
 - **Soft Skills:** Communication, collaboration, problem-solving
 
-## 📚 How I Learned
+## 📚 Projects
+All Projects are created as child repository with the name of each Project.
+To see projectcs just click on `main` and select project or Just click on below links:
+    - [USA_House_Price_Prediction](https://github.com/dipaklad-scientist/Data_Science_Skills/tree/USA_House_Price_Prediction)
+    - [SpaceX_Falcon9_first_stage_Landing_Prediction](https://github.com/dipaklad-scientist/Data_Science_Skills/tree/SpaceX_Falcon9_first_stage_Landing_Prediction)
 
-- Completed academic coursework in data structures, algorithms, and statistics
-- Built hands-on projects like predictive models, dashboards, and data pipelines
-- Participated in Kaggle competitions and online bootcamps
-- Explored real-world datasets to practice EDA, modeling, and storytelling
+
 
 ## 🚀 Why This Matters
 
@@ -25,3 +26,4 @@ This repository is not just a checklist—it's a showcase of my growth, curiosit
 
 ## Deployed App Links
 **USA_House_Price_Prediction_model_app =** https://datascienceskills-txkesgndkbtq49cq36bk7g.streamlit.app/
+**SpaceX_Falcon9_Landing_Prediction_app=** https://datascienceskills-q36rxhcunb7g9aj57krg9j.streamlit.app/
