@@ -33,42 +33,42 @@
 
 
 ### 🛠️ Methodology
-**1. Data Wrangling**
+ **1. Data Wrangling**
 
-- Removed irrelevant columns.
-- Corrected data types.
-- Handled missing values.
+  - Removed irrelevant columns.
+  - Corrected data types.
+  - Handled missing values.
 
-**2. Feature Engineering**
+ **2. Feature Engineering**
 
-- Created Class column (Success = 1, Failure = 0).
+  - Created Class column (Success = 1, Failure = 0).
 
-**3. Exploratory Data Analysis**
+ **3. Exploratory Data Analysis**
 
-- Queried data using SQLite.
-- Visualized trends with Seaborn, Matplotlib, and Folium.
+  - Queried data using SQLite.
+  - Visualized trends with Seaborn, Matplotlib, and Folium.
 
-**4. Data Visualization**
+ **4. Data Visualization**
 
-- Seaborn: barplot, catplot, lineplot
-- Matplotlib: Custom charts
-- Folium: World map with marker clusters (green = success, red = failure)
+  - Seaborn: barplot, catplot, lineplot
+  - Matplotlib: Custom charts
+  - Folium: World map with marker clusters (green = success, red = failure)
 
-**5. Model Development**
+ **5. Model Development**
 
-**Models tested:**
-- `LogisticRegression`, `SVC`, `DecisionTreeClassifier`, `KNeighborsClassifier`.
-- Train-test split: 80/20
-- Best Model: Logistic Regression
+  **Models tested:**
+  - `LogisticRegression`, `SVC`, `DecisionTreeClassifier`, `KNeighborsClassifier`.
+  - Train-test split: 80/20
+  - Best Model: Logistic Regression
 
-**Tuned via GridSearchCV**
-- Best Params: {'C': 0.01, 'penalty': 'l2', 'solver': 'lbfgs'}
+  **Tuned via GridSearchCV**
+  - Best Params: {'C': 0.01, 'penalty': 'l2', 'solver': 'lbfgs'}
 
 
-**Performance:**
-
-- R² Score = 0.94
-- Cross-validation: cv=5
+  **Performance:**
+  
+  - R² Score = 0.94
+  - Cross-validation: cv=5
 
 
 
