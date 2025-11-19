@@ -1,38 +1,48 @@
-# 🧠 Data Scientist Skills
+# 🧠 **Data Scientist Skills Repository**
 
-Hi! I'm a student passionate about data science and actively seeking opportunities to apply my skills in real-world settings. This repository is a reflection of my learning journey, showcasing the core competencies I've developed through coursework, personal projects, and self-study.
+> *A curated collection of projects and skills demonstrating my journey toward becoming a data scientist.*
 
-## 🎯 What This Repo Covers
+---
 
-- **Programming:** Python (NumPy, Pandas, Scikit-learn, Matplotlib), SQL
-- **Statistics & Probability:** Regression, hypothesis testing, distributions
-- **Machine Learning:** Supervised and unsupervised learning, model evaluation
-- **Deep Learning:** Neural networks, CNNs, RNNs (introductory level)
-- **Data Visualization:** Seaborn, Tableau, Power BI
-- **Big Data & Cloud:** Basics of Spark, Hadoop, AWS
-- **Soft Skills:** Communication, collaboration, problem-solving
+## 🎯 **Overview**
+This repository reflects my learning journey in **Data Science**, showcasing the core competencies I’ve developed through coursework, personal projects, and self-study. It includes **real-world projects**, **deployed applications**, and **hands-on implementations** of data science concepts.
+
+---
+
+## ✅ **Core Competencies**
+
+| **Category**            | **Skills & Tools** |
+|--------------------------|----------------------|
+| **Programming & Querying** | Python, SQL, DAX (Power BI), Excel |
+| **Data Analysis & Manipulation** | Pandas, NumPy, Data Wrangling, Cleaning, Transformation, EDA, Feature Engineering |
+| **Machine Learning & AI** | Scikit-learn, Supervised & Unsupervised Learning, Model Development & Evaluation, Generative AI, Copilot |
+| **Visualization & Reporting** | Matplotlib, Seaborn, Plotly, Dash, Folium, Power BI, Excel |
+| **Tools & Platforms** | Streamlit, Jupyter Notebook, Google Colab, GitHub, Google Drive |
+| **Statistics & Probability** | Regression, Classification, Hypothesis Testing, Distributions |
+| **Soft Skills** | Communication, Collaboration, Problem-Solving |
+
+---
 
 ## 📚 Projects
-- All Projects are created as child repository with the name of each Project.
-- To see projectcs just click on `main` and select project or Just click on below links:
-    - [USA_House_Price_Prediction](https://github.com/dipaklad-scientist/Data_Science_Skills/tree/USA_House_Price_Prediction)
-        - **Contents:**
-            -  `README.md`
-            -  `USA_House_Sales_Data_Analysis.ipynb`
-            -  `USA_House_Price_Prediction_Project_Report.pdf`
-            -  [USA_House_Price_Prediction_Model.pkl](https://drive.google.com/file/d/1AxdMNf_CP0j9L3l7tkP4i8a01WlRgczB/view?usp=sharing) is stored at google drive due to storage limit on github.
-            -  `app.py`
-            -  `requirements.txt`      
-    - [SpaceX_Falcon9_first_stage_Landing_Prediction](https://github.com/dipaklad-scientist/Data_Science_Skills/tree/SpaceX_Falcon9_first_stage_Landing_Prediction)
-        - **Contents:**
-          - `README.md`
-          -  `SpaceX_Falcon9_first_stage_Landing_Prediction.ipynb`
-          -  `SpaceX_Falcon9_first_stage_Landing_Prediction.pkl`
-          -  `spacex_app.py`
-          -  `requirements.txt`
-          -  `scaler.pkl`
-          -  `training_columns.pkl`
-          -  `spacex_launch_data.csv`
+Projects are organized as **child repositories**. Click on the links below to explore:
+### 🔹[USA_House_Price_Prediction](https://github.com/dipaklad-scientist/Data_Science_Skills/tree/USA_House_Price_Prediction)
+**Contents:**
+-  `README.md`
+-  `USA_House_Sales_Data_Analysis.ipynb`
+-  `USA_House_Price_Prediction_Project_Report.pdf`
+-  [USA_House_Price_Prediction_Model.pkl](https://drive.google.com/file/d/1AxdMNf_CP0j9L3l7tkP4i8a01WlRgczB/view?usp=sharing) is stored at google drive due to storage limit on github.
+-  `app.py`
+-  `requirements.txt`      
+### 🔹[SpaceX_Falcon9_first_stage_Landing_Prediction](https://github.com/dipaklad-scientist/Data_Science_Skills/tree/SpaceX_Falcon9_first_stage_Landing_Prediction)
+ **Contents:**
+- `README.md`
+-  `SpaceX_Falcon9_first_stage_Landing_Prediction.ipynb`
+-  `SpaceX_Falcon9_first_stage_Landing_Prediction.pkl`
+-  `spacex_app.py`
+-  `requirements.txt`
+-  `scaler.pkl`
+-  `training_columns.pkl`
+-  `spacex_launch_data.csv`
 
 
 
