@@ -1,6 +1,6 @@
 # 🧠 **Data Science Skills Repository**
 
-> *A curated collection of projects and skills demonstrating my data skills.*
+> *A curated collection of projects and skills demonstrating my Data Science skills.*
 
 ---
 
