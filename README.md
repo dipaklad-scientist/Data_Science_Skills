@@ -17,7 +17,9 @@ SpaceY company want to compite spaceX in the race of space.
 - Identify key factors influencing landing outcome.
 
 ## 🔍 Key Findings
-- **Condition of the house** does not affect price as much as expected.
+- ES-L1, GEO, HEO, SSO, Orbits has most success rate.
+- Max Load carried out by Falcon9 rocket is 3726 kg.
+- NASA is also client of spaceX with 32 lounches.
 - **Square footage** and **overall grade** dominate price prediction.
 - Houses with **waterfront views** are significantly more expensive.
 - Square footage apart from the basement also positively impacts price.
