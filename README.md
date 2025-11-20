@@ -17,7 +17,7 @@
 ### 🔍 Key Insights
 
 - Orbits like ES-L1, GEO, HEO, SSO have the highest success rates.
-- Maximum payload carried by Falcon 9: 3726 kg.
+- Maximum payload carried by Falcon 9: 5000 kg.
 - NASA is a major client with 32 launches.
 
 
