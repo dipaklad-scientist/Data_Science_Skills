@@ -16,7 +16,7 @@ app = Dash()
 # assume you have a "long-form" data frame
 # see https://plotly.com/python/px-arguments/ for more options
 df = pd.read_csv('Falcon9_Dataset_from_API.csv')
-fig = px.bar(df, x="Fruit", y="Amount", color="City", barmode="group")
+fig = px.bar(df, x="Orbit", y="Class")
 
 app.layout = html.Div(children=[
     html.H1(children='Hello Dash'),
