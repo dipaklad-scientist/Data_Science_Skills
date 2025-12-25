@@ -4,7 +4,7 @@ import numpy as np
 import joblib
 
 # Load model and scaler
-model = joblib.load('SpaceX_Project_Based_On_Classification/SpaceX_Falcon9_first_stage_Landing_Prediction.pkl')
+model = joblib.load('SpaceX_Project_Based_On_Classification/SpaceX_Classification_Model.pkl')
 scaler = joblib.load('SpaceX_Project_Based_On_Classification/scaler.pkl')
 
 # Load original dataset for dropdown options
