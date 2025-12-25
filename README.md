@@ -17,6 +17,7 @@ This repository reflects my learning journey in **Data Science**, showcasing the
 | **Data Analysis & Manipulation** | Pandas, NumPy, Data Wrangling, Cleaning, Transformation, EDA, Feature Engineering |
 | **Machine Learning & AI** | Scikit-learn, Supervised & Unsupervised Learning, Model Development & Evaluation, Generative AI, Copilot |
 | **Visualization & Reporting** | Matplotlib, Seaborn, Plotly, Dash, Folium, Power BI, Excel |
+| **Cloud and Deployment** |AWS (EC2, S3), End-to-End ML Lifecycle |
 | **Tools & Platforms** | Streamlit, Jupyter Notebook, Google Colab, GitHub, Google Drive |
 | **Statistics & Probability** | Regression, Classification, Hypothesis Testing, Distributions |
 | **Soft Skills** | Communication, Collaboration, Problem-Solving |
