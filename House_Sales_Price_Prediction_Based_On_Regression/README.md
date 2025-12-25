@@ -51,7 +51,7 @@ A Real Estate Investment Trust (REIT) wants to start investing in residential pr
 - Hosted on **Streamlit Cloud**.
 
 ## 🌐 App Link
-[USA House Price Prediction Model](https://datascienceskills-txkesgndkbtq49cq36bk7g.streamlit.app/)
+-Deployed Streamlit App link- https://datascienceskills-bn8xhzpobdvwrhxru3t7hy.streamlit.app/
 
 ## 🛠️ Tech Stack
 - **Languages & Libraries**: Python, Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, XGBoost, Plotly Dash
