@@ -14,10 +14,10 @@ import joblib
 
 # Load model and scaler
 model = joblib.load('SpaceX_Project_Based_On_Classification/SpaceX_Falcon9_first_stage_Landing_Prediction.pkl')
-scaler = joblib.load('scaler.pkl')
+scaler = joblib.load('SpaceX_Project_Based_On_Classification/scaler.pkl')
 
 # Load original dataset for dropdown options
-df = pd.read_csv('spacex_launch_data.csv')  # Replace with your actual file
+df = pd.read_csv('SpaceX_Project_Based_On_Classification/spacex_launch_data.csv')  # Replace with your actual file
 
 # Dropdown options
 Orbit_key = df['Orbit'].unique().tolist()
@@ -68,7 +68,7 @@ if predictbutton:
     input_encoded = pd.get_dummies(raw_input, columns=categorical_cols, dtype=int)
 
     # Align columns with training set
-    training_columns = joblib.load('training_columns.pkl')  # Save this during training
+    training_columns = joblib.load('SpaceX_Project_Based_On_Classification/training_columns.pkl')  # Save this during training
     input_encoded = input_encoded.reindex(columns=training_columns, fill_value=0)
 
     # Scale numeric features
