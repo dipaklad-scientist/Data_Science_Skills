@@ -11,3 +11,4 @@
 - **PostgreSQL**,**Sqlite**,SQL,Kaggle,Excel
 ## The Dateset Used in this project is Car Sales Report dataset downloaded from kaggle
    - Dataset Link- https://www.kaggle.com/datasets/missionjee/car-sales-report
+<img width="1302" height="730" alt="image" src="https://github.com/user-attachments/assets/8a345817-3900-4f7c-81a8-cb0e7239ccb8" />
