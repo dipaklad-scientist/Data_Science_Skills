@@ -8,7 +8,8 @@
 - Transmission preferences by gender & region
 - Engine type impact on price & popularity per company
 ## Tools Used
-- **PostgreSQL**,**Sqlite**,SQL,Kaggle,Excel
+- Postgresql,Sqlite,SQL,Power BI,Kaggle,Excel
 ## The Dateset Used in this project is Car Sales Report dataset downloaded from kaggle
    - Dataset Link- https://www.kaggle.com/datasets/missionjee/car-sales-report
+# Created Power BI Dashboard to Visualize Findings 
 <img width="1302" height="730" alt="image" src="https://github.com/user-attachments/assets/8a345817-3900-4f7c-81a8-cb0e7239ccb8" />
