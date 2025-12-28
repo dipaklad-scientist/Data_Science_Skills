@@ -86,6 +86,8 @@
 
 - Languages & Libraries: Python, Pandas, NumPy, BeautifulSoup, Matplotlib, Seaborn, Folium, Scikit-learn, Streamlit
 - Tools: Google Colab, GitHub, Streamlit Cloud
+## Created PowerBI Dashboard To Visualize Insights 
+<img width="1333" height="745" alt="image" src="https://github.com/user-attachments/assets/045d97d2-763e-4ef6-9e72-72705e709c0a" />
 
 
 ### ✅ Conclusion
