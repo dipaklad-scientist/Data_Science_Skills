@@ -13,6 +13,6 @@
 
 
 ## Tools Used
-- Postgresql,Sqlite,SQL,Power BI,Kaggle,Excel
+- Postgresql, Sqlite, SQL, Power BI, Advance Excel, Kaggle
 ## The Dateset Used in this project is Car Sales Report dataset downloaded from kaggle
    - Dataset Link- https://www.kaggle.com/datasets/missionjee/car-sales-report
