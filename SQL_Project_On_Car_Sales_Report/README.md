@@ -10,6 +10,8 @@
 
 # Created Power BI Dashboard to Visualize Findings and Automate Charts
 <img width="1302" height="730" alt="image" src="https://github.com/user-attachments/assets/8a345817-3900-4f7c-81a8-cb0e7239ccb8" />
+
+
 ## Tools Used
 - Postgresql,Sqlite,SQL,Power BI,Kaggle,Excel
 ## The Dateset Used in this project is Car Sales Report dataset downloaded from kaggle
