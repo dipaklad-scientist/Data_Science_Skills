@@ -1,4 +1,4 @@
-# Car Sales Report Analysis Using SQL.
+# Car Sales Report Analysis Using SQL and Power BI.
 
 # Answered Below Business Questions 
 - Monthly unit sales & revenue trend (seasonality, ASP)
